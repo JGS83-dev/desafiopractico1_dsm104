@@ -1,4 +1,4 @@
-package com.example.ejercicio3
+package com.udb.dsm104.desafiopractico1
 
 import java.math.BigDecimal
 import java.math.RoundingMode

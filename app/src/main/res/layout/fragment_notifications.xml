@@ -6,17 +6,134 @@
     android:layout_height="match_parent"
     tools:context=".ui.notifications.NotificationsFragment">
 
+    <EditText
+        android:id="@+id/TxtUno"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Número uno"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <Button
+        android:id="@+id/BtnSuma"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:text="Suma"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/BtnResta"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:text="Resta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/BtnMultiplicacion"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:text="Multiplicacion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <Button
+        android:id="@+id/BtnDivision"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:text="Division"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
     <TextView
-        android:id="@+id/text_notifications"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+        android:id="@+id/TxtResultado"
+        android:layout_width="117dp"
+        android:layout_height="53dp"
+        android:text="Resultado"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <EditText
+        android:id="@+id/TxtDos"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:hint="Número dos"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <TextView
+        android:id="@+id/Banner"
+        android:layout_width="169dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="566dp"
+        android:text="Calculadora | Acosta-Garcia"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TxtValor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
+
+    <TextView
+        android:id="@+id/TxtValorDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
