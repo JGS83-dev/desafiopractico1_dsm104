@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "DesafioPractico1"
+rootProject.name = "Ejercicio3"
 include(":app")
