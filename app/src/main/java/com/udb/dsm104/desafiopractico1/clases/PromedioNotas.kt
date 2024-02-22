@@ -5,31 +5,28 @@ import java.math.RoundingMode
 
 class PromedioNotas(
     var nombre: String,
-    var nota1: BigDecimal,
-    var nota2: BigDecimal,
-    var nota3: BigDecimal,
-    var nota4: BigDecimal,
-    var nota5: BigDecimal
+    private var nota1: BigDecimal,
+    private var nota2: BigDecimal,
+    private var nota3: BigDecimal,
+    private var nota4: BigDecimal,
+    private var nota5: BigDecimal
 ) {
 
     public fun CalcularPromedio(): BigDecimal {
-        val resultado: BigDecimal = BigDecimal(0)
-        resultado.add(nota1)
-        resultado.add(nota2)
-        resultado.add(nota3)
-        resultado.add(nota4)
-        resultado.add(nota5)
-        return resultado.divide(BigDecimal(5), 2, RoundingMode.HALF_UP)
+        var resultado = BigDecimal(0)
+        resultado += nota1
+        resultado += nota2
+        resultado += nota3
+        resultado += nota4
+        resultado += nota5
+
+        resultado /= BigDecimal(5)
+
+        return resultado
     }
 
     public fun MostrarAprobadoReprobado(): String {
-        val resultado: BigDecimal = BigDecimal(0)
-        resultado.add(nota1)
-        resultado.add(nota2)
-        resultado.add(nota3)
-        resultado.add(nota4)
-        resultado.add(nota5)
-        resultado.divide(BigDecimal(5), 2, RoundingMode.HALF_UP)
+        var resultado = CalcularPromedio()
 
         if(resultado >= BigDecimal(6) ){
             return "Aprobado"

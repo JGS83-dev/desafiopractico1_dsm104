@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -20,6 +21,12 @@ class Ejercicio1Fragment : Fragment() {
     private lateinit var btnCalcular: Button
     private lateinit var txtMensaje: TextView
 
+    private lateinit var txtNota1:EditText
+    private lateinit var txtNota2:EditText
+    private lateinit var txtNota3:EditText
+    private lateinit var txtNota4:EditText
+    private lateinit var txtNota5:EditText
+    private lateinit var txtNombre:EditText
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -35,23 +42,32 @@ class Ejercicio1Fragment : Fragment() {
         _binding = FragmentEjercicio1Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val utils = Utils()
-
-        val promedioNotas = PromedioNotas(binding.TxtNombre.text.toString(),
-            utils.obtenerNumero(binding.TxtNota1),
-            utils.obtenerNumero(binding.TxtNota2),
-            utils.obtenerNumero(binding.TxtNota3),
-            utils.obtenerNumero(binding.TxtNota4),
-            utils.obtenerNumero(binding.TxtNota5))
-
         btnCalcular = binding.BtnCalcular
         txtMensaje = binding.TxtResultado
-        btnCalcular.setOnClickListener { realizarCalculo(promedioNotas) }
+
+        txtNota1 = binding.TxtNota1
+        txtNota2 = binding.TxtNota2
+        txtNota3 = binding.TxtNota3
+        txtNota4 = binding.TxtNota4
+        txtNota5 = binding.TxtNota5
+
+        txtNombre = binding.TxtNombre
+        btnCalcular.setOnClickListener { realizarCalculo() }
 
         return root
     }
 
-    private fun realizarCalculo(promedioNotas: PromedioNotas) {
+    private fun realizarCalculo() {
+        val utils = Utils()
+        val promedioNotas = PromedioNotas(
+            txtNombre.text.toString(),
+            utils.obtenerNumero(txtNota1),
+            utils.obtenerNumero(txtNota2),
+            utils.obtenerNumero(txtNota3),
+            utils.obtenerNumero(txtNota4),
+            utils.obtenerNumero(txtNota5)
+        )
+
        var mensaje:String = "Estimado: " + promedioNotas.nombre
        mensaje += "\nSu promedio es de: " + promedioNotas.CalcularPromedio().toString()
        mensaje += "\nUsted ha: " + promedioNotas.MostrarAprobadoReprobado().toString()
