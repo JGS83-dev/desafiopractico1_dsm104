@@ -1,4 +1,4 @@
-package com.udb.dsm104.desafiopractico1.ui.notifications
+package com.udb.dsm104.desafiopractico1.ui.ejercicio3
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,13 +7,13 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.udb.dsm104.desafiopractico1.databinding.FragmentNotificationsBinding
+import com.udb.dsm104.desafiopractico1.databinding.FragmentEjercicio3Binding
 import android.widget.Button
 import android.widget.EditText
-import com.udb.dsm104.desafiopractico1.Calculadora
+import com.udb.dsm104.desafiopractico1.clases.Calculadora
 import java.math.BigDecimal
 
-class NotificationsFragment : Fragment() {
+class Ejercicio3Fragment : Fragment() {
 
     private lateinit var txtUno: EditText
     private lateinit var txtDos: EditText
@@ -30,7 +30,7 @@ class NotificationsFragment : Fragment() {
 
 
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentEjercicio3Binding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -43,10 +43,10 @@ class NotificationsFragment : Fragment() {
     ): View {
 
 
-        val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        val ejercicio3ViewModel =
+            ViewModelProvider(this).get(Ejercicio3ViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentEjercicio3Binding.inflate(inflater, container, false)
         val root: View = binding.root
 
 
