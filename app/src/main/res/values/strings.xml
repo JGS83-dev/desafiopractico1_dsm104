@@ -1,6 +1,18 @@
 <resources>
     <string name="app_name">DesafioPractico1</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_home">Ejercicio 1</string>
+    <string name="title_dashboard">Ejercicio 2</string>
+    <string name="title_notifications">Ejercicio 3</string>
+
+    <string name="tituloEjercicio1">Ejercicio 1 | Acosta - Garcia</string>
+    <string name="tituloEjercicio2">Ejercicio 2 | Acosta - Garcia</string>
+    <string name="tituloEjercicio3">Ejercicio 3 | Acosta - Garcia</string>
+
+    <string name="msgNota1">Nota 1</string>
+    <string name="msgNota2">Nota 2</string>
+    <string name="msgNota3">Nota 3</string>
+    <string name="msgNota4">Nota 4</string>
+    <string name="msgNota5">Nota 5</string>
+
+    <string name="calcular">Calcular</string>
 </resources>
