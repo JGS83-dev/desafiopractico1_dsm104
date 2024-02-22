@@ -14,5 +14,7 @@
     <string name="msgNota4">Nota 4</string>
     <string name="msgNota5">Nota 5</string>
 
+    <string name="nombre">Nombre</string>
+
     <string name="calcular">Calcular</string>
 </resources>

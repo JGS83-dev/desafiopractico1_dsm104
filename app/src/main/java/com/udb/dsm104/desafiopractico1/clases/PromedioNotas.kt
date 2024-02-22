@@ -4,15 +4,15 @@ import java.math.BigDecimal
 import java.math.RoundingMode
 
 class PromedioNotas(
-    val nombre: String,
-    val nota1: BigDecimal,
-    val nota2: BigDecimal,
-    val nota3: BigDecimal,
-    val nota4: BigDecimal,
-    val nota5: BigDecimal
+    var nombre: String,
+    var nota1: BigDecimal,
+    var nota2: BigDecimal,
+    var nota3: BigDecimal,
+    var nota4: BigDecimal,
+    var nota5: BigDecimal
 ) {
 
-    public fun CalcularPromedio(): BigDecimal? {
+    public fun CalcularPromedio(): BigDecimal {
         val resultado: BigDecimal = BigDecimal(0)
         resultado.add(nota1)
         resultado.add(nota2)
@@ -22,7 +22,7 @@ class PromedioNotas(
         return resultado.divide(BigDecimal(5), 2, RoundingMode.HALF_UP)
     }
 
-    public fun MostrarAprobadoReprobado(): String? {
+    public fun MostrarAprobadoReprobado(): String {
         val resultado: BigDecimal = BigDecimal(0)
         resultado.add(nota1)
         resultado.add(nota2)
