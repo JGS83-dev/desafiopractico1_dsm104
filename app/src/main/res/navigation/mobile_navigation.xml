@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.udb.dsm104.desafiopractico1.ui.home.HomeFragment"
+        android:name="com.udb.dsm104.desafiopractico1.ui.ejercicio1.Ejercicio1Fragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_ejercicio1" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.udb.dsm104.desafiopractico1.ui.dashboard.DashboardFragment"
+        android:name="com.udb.dsm104.desafiopractico1.ui.ejercicio2.Ejercicio2Fragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_ejercicio2" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.udb.dsm104.desafiopractico1.ui.notifications.NotificationsFragment"
+        android:name="com.udb.dsm104.desafiopractico1.ui.ejercicio3.Ejercicio3Fragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_ejercicio3" />
 </navigation>
