@@ -16,5 +16,7 @@
 
     <string name="nombre">Nombre</string>
 
+    <string name="salario">Salario</string>
+
     <string name="calcular">Calcular</string>
 </resources>
